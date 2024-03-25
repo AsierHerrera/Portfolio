@@ -1,13 +1,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('/img/fondo3.png');
     background-size: cover;
     font-family: "fuente1", Arial, sans-serif;
 }
 
 .contacto{
     background-image: url('/img/formulario\ 1.jpg');
+}
+
+.negrita{
+    font-weight: bold;
 }
 
 .blanco{
@@ -110,7 +113,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
 }   
 p a {
     display: inline;
