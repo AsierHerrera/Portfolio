@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/img/Icono.png" type="image/x-icon">
+</head>
+<body class="contacto">
+    <header class="header" id="myNavbar">
+        <div class="navbar">
+            <ul>
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/biografia.html">Biografía</a></li>
+                <li><a href="/html/portfolio.html">Portfolio</a></li>
+                <li><a href="/html/contacto.html" class="active">Contacto</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h1>Contacto</h1>
+            <p>¡Ponte en contacto conmigo!</p>
+            
+            <form action="/enviar.php" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required maxlength="50">
+            
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" maxlength="15">
+            
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required maxlength="100">
+            
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required maxlength="500"></textarea>
+            
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </main>
+    <script src="/js/index.js"></script>
+    <footer>
+        <nav class="social-icons">
+            <a href="https://github.com/AsierHerrera" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+            <a href="https://www.linkedin.com/in/asier-herrera-iturralde-270179159/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        </nav>
+        <p>Derechos de autor © 2024 - Realizado por Asier Herrera</p>
+    </footer>
+</body>
+</html>

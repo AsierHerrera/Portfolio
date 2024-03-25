@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/img/Icono.png" type="image/x-icon">
+    <style>
+        /* Estilo específico para portfolio.html */
+        body {
+            background-image: url('/img/');
+            background-size: cover;
+            font-family: "fuente1", Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="portfolio">
+    <header class="header" id="myNavbar">
+        <div class="navbar">
+            <ul>
+                <li><a href="/html/index.html" class="active">Home</a></li>
+                <li><a href="/html/biografia.html">Biografía</a></li>
+                <li><a href="/html/portfolio.html">Portfolio</a></li>
+                <li><a href="/html/contacto.html">Contacto</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="video-background">
+            <video autoplay muted loop id="video-background">
+                <source src="/video/Carretera portfolio.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+    </header>
+
+    <main class="portfolio-container">
+        <article class="skill-container">
+            <h1>Actual skills</h1>
+            <div class="skill">
+                <h2>
+                    HTML
+                    <i class="icon-html"></i>
+                </h2>
+                <div class="skill-level" style="--level: 3;" data-level="5"></div>
+            </div>
+            <div class="skill">
+                <h2>
+                    CSS
+                    <i class="icon-css"></i>
+                </h2>
+                <div class="skill-level" style="--level: 10;" data-level="2"></div>
+            </div>
+            <div class="skill">
+                <h2>
+                    JAVASCRIPT
+                    <i class="icon-javascript"></i>
+                </h2>
+                <div class="skill-level" style="--level: 2;" data-level="2"></div>
+            </div>          
+        </article>
+        <section class="mis-proyectos">
+            <div class="descripcion">
+                <h2 class="blanco">Proyectos</h2>
+                <p>Aquí encontrarás una lista de mis proyectos. <br>¡Estoy trabajando en ellos! <br>Pero como aún no hay nada que mostrar, al menos disfruta del video que he puesto.</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A6jJR4sEW_s?si=a3sOv_TvblvoZt5R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <script src="/js/index.js"></script>
+    <footer>
+        <nav class="social-icons">
+            <a href="https://github.com/AsierHerrera" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+            <a href="https://www.linkedin.com/in/asier-herrera-iturralde-270179159/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        </nav>
+        <p>Derechos de autor © 2024 - Realizado por Asier Herrera</p>
+    </footer>
+</body>
+</html>
